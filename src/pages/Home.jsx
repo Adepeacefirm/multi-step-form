@@ -14,13 +14,13 @@ const Home = () => {
     <main className="sm:flex sm:justify-center sm:my-10 sm:p-8 sm:bg-white sm:w-[90%] lg:w-[70%] sm:mx-auto sm:rounded-xl shadow-[0_0_5px_rgba(0,0,0,0.2)]">
       <section className='bg-[url("/bg-sidebar-mobile.svg")] sm:bg-[url("/bg-sidebar-desktop.svg")] sm:w-[40%] lg:w-[50%] sm:rounded-2xl bg-center bg-cover pt-7  pb-25'>
         <div className="flex sm:flex-col items-center sm:items-start sm:ml-8 gap-5 justify-center">
-          {stepInfo.map((item, index) => (
+          {stepInfo.map((item) => (
             <button
               onClick={() => {
                 setCurrentStep(item.stage);
               }}
               className="flex items-center gap-3"
-              key={index}
+              key={item.stage}
             >
               <div
                 className={` p-2 rounded-full flex justify-center border border-white items-center font-medium w-7 h-7 ${

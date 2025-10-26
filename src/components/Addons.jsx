@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Addons = () => {
@@ -28,7 +28,7 @@ const Addons = () => {
             }`}
           >
             <div
-              className={`w-6 h-6 rounde-lg flex items-center border-2 rounded-sm border-purple200 justify-center ${
+              className={`w-6 h-6 flex items-center border-2 rounded-sm border-purple200 justify-center ${
                 onlineService ? "bg-purple600" : "bg-transparent"
               }`}
             >

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Plans = () => {
@@ -16,10 +16,10 @@ const Plans = () => {
         </section>
         <section>
           <div className="flex flex-col lg:flex-row gap-3 my-5">
-            {billingPlan.map((item, index) => (
+            {billingPlan.map((item) => (
               <div
                 onClick={() => setBilling(item.name)}
-                key={index}
+                key={item.name}
                 className={`flex lg:flex-col items-center lg:items-start gap-3 text-sm border-2 p-3 lg:p-7 rounded-lg ${
                   billing === item.name
                     ? "border-purple600"

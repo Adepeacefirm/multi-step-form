@@ -48,7 +48,7 @@ const Personal = () => {
               }}
               className="border border-grey500 rounded-md block w-full p-2 sm:p-3 my-1 text-blue950 font-medium placeholder:font-medium placeholder:text-grey500"
               type="text"
-              name="input"
+              name="name"
               placeholder="e.g Stephen King"
             />
           </div>
@@ -90,7 +90,7 @@ const Personal = () => {
               value={phone}
               onChange={(e) => {
                 setPhone(e.target.value);
-                if (phone.trim()) {
+                if (phone) {
                   setPhoneError(false);
                 }
               }}
